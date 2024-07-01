@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 15px;
+    height: 700px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.content {
+    margin: 8px;
+}
+
+.img {
+    height: 200px;
+    width: 400px;
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+
+.link {
+    font-size: 20px;
+    border: 2px solid red;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width : 675px) {
+    .img {
+        height: 150px;
+        width: 280px;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    thead {
+        display: none;
+    }
+
+    .container td {
+        display: block;
+    }
+
+    .td {
+        background-color: rgba(1, 1, 1, 0.3);
+        color: black;
+        text-align: center;
+    }
+
+    .about::before {
+        content: "About : ";
+    }
+    .req::before {
+        content: "Send Request : ";
+    }
+    .contact::before {
+        content: "Contact : ";
+    }
+    .email::before {
+        content: "Email : ";
+    }
+
+  
+    td::before{
+        float: left;
+        margin-right: 2rem;
+        font-weight: bold;
+    }
+}   
